@@ -1,16 +1,12 @@
 """
 CosyVoice 2 模型架构展示
-该文件用于打印模型详细结构，证明对架构的理解。
+仅用于展示架构
 """
 
 import torch
 import torch.nn as nn
 import sys
 import os
-
-
-
-# =================================================
 
 class CosyVoiceModel2(nn.Module):
     """
@@ -66,7 +62,6 @@ def build_model():
 if __name__ == "__main__":
     model = build_model()
     print("\n" + "=" * 20 + " Detailed Model Architecture " + "=" * 20)
-    # 这行代码会打印出几百行的详细结构，非常适合截图放在报告里
     print(model)
     print("=" * 67)
     print("\nStructure definition verification: SUCCESS")
